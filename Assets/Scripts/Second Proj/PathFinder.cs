@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PathFinder : MonoBehaviour, IPathFinder
 {
+    // Легче было использовать visibility graph, но для данной задачи этот вариант, возможно, быстрее
+
     private List<Rectangle> rects;
 
     private List<(Vector2, Vector2)> leftRightVectors;
