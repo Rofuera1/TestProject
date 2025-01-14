@@ -135,12 +135,12 @@ public class PathFinder : MonoBehaviour, IPathFinder
         Vector2 B = new Vector2(110f, -42f); // Когда конец строится криво
 
         IEnumerable<Vector2> vecs = GetPath(A, B, edges);
-        //VisualizePath(vecs, Color.green);
+        VisualizePath(vecs, Color.green);
 
         Debug.DrawRay(A, Vector2.up * 10f + Vector2.right * 10f, Color.white);
         Debug.DrawRay(B, Vector2.up * 10f + Vector2.right * 10f, Color.white);
 
-        VisualizeBetaPath(Color.black, 5f);
+        //VisualizeBetaPath(Color.black, 5f);
     }
 
     public IEnumerable<Vector2> GetPath(Vector2 A, Vector2 C, IEnumerable<Edge> edges)
